@@ -1,0 +1,44 @@
+#head {
+    opacity: 0;
+    z-index: 25;
+    top         :   "5%",
+ }
+
+#tail {
+    z-index: 30;
+    /*background: lightgray;*/
+}
+
+
+#body {
+    z-index: 0;
+}
+
+#head2 {
+    z-index: 20;
+    top        :   5%;
+    transform:rotate(-5deg);
+}
+
+.fox {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#circle{
+    background-color: powderblue;
+    border-radius: 100%;
+    width:10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -20;
+}
