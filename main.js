@@ -2,6 +2,30 @@
  * Created by roisinokeeffe on 15/07/2015.
  */
 
+/*===================================================================*/
+/*NEW RUZO */
+/*===================================================================*/
+
+var ruzoTL = new TimelineMax({repeat:2, repeatDelay:1});
+
+
+
+ruzoTL.to("#ruzoOpen",0, {opacity:1}, "1.5") ;
+ruzoTL.to("#ruzoClosed",0, {opacity:0}, "1.5") ;
+ruzoTL.to("#ruzoOpen",.5, { rotation:"5"}, "1.5");
+
+ruzoTL.from("#ruzoTail", 1, {
+    top             :   "-15%",
+    left            :   "-5%",
+    rotation        :   "90",
+    transformOrigin :   "27% 100%",
+    ease            :   Back.easeOut.config(2), y: 0
+
+}, "-=1.75");
+/*===================================================================*/
+/*ORIGINAL RUZA */
+/*===================================================================*/
+
 //Declare a new timeline. Make it repeat twice (3 times total), with a delay of 1 second
 
 var foxTimeline = new TimelineMax({repeat:2, repeatDelay:1});
